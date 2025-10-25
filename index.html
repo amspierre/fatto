@@ -5,59 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fatto</title>
     <link rel="stylesheet" href="./public/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <nav>
-        <img src="./assets/images/logos/fatto-logotipo-no-bg.png" alt="logotipo da Fatto">
+
+    <!-- NAV -->
+    <nav id="navbar">
+        <img src="./assets/images/logos/fatto-logotipo-no-bg.png" alt="Logo da Fatto">
         <div id="nav-links">
-            <a href="###" class="ancora link">Nosso catálogo</a>
-            <a href="###" class="ancora link">Nossa equipe</a>
-            <a href="###" class="ancora link">Nossos parceiros</a>
+            <a href="#" class="link">Início</a>
+            <a href="#" class="link">Sobre</a>
+            <a href="#" class="link">Contato</a>
+        </div>
+
+        <!-- Menu hambúrguer -->
+        <div class="hamburger" id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
     </nav>
 
+    <!-- HEADER -->
     <header>
         <h1>Lorem Ipsum dolor</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, nam blanditiis maxime molestias vitae minus accusantium nobis dolores ad quod. Ipsa eum quod eligendi harum ut excepturi repellendus repellat impedit.</p>
-        <a href="###">Veja nosso catálogo</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, nam blanditiis maxime molestias vitae minus accusantium nobis dolores ad quod.</p>
+        <a href="#catalogo-pagina" class="link">Veja nosso catálogo</a>
     </header>
 
+    <!-- CATÁLOGO -->
     <section id="catalogo-pagina">
-        <h2>Nosso catálogo</h2>
-        <div id="linhas">
-            <div class="linha titulos">
-                <h3>Lorem Ipsum</h3>
-                <h3>Lorem Ipsum</h3>
-                <h3>Lorem Ipsum</h3>
-                <h3>Lorem Ipsum</h3>
-            </div>
+        <h2>Conheça nossa linha <strong>completa</strong> em esquadrias</h2>
 
-            <div class="linha-conteudo">
-            <div class="linha">
-                <p class="conteudo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates voluptatibus at dignissimos dolore omnis quia magnam quos quam. Eius accusantium ipsam eveniet est dolorem, quibusdam doloribus vitae error odio magni?</p>
+        <div id="linha-titulos">
+            <h3 class="tab active" data-target="linha1">Lorem Ipsum</h3>
+            <h3 class="tab" data-target="linha2">Lorem Ipsum</h3>
+            <h3 class="tab" data-target="linha3">Lorem Ipsum</h3>
+            <h3 class="tab" data-target="linha4">Lorem Ipsum</h3>
+        </div>
+
+        <div class="linha-conteudo">
+            <div class="linha active" id="linha1">
+                <p class="conteudo">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac consectetur sapien, ac finibus nibh.
+                    Vivamus ultrices turpis et cursus sagittis. Donec suscipit auctor dui id viverra.
+                </p>
+                
                 <img src="./assets/images/janela-desenho.png" alt="Desenho técnico de uma janela de correr">
             </div>
 
-            <div class="linha">
-                <p class="conteudo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates voluptatibus at dignissimos dolore omnis quia magnam quos quam. Eius accusantium ipsam eveniet est dolorem, quibusdam doloribus vitae error odio magni?</p>
+            <div class="linha" id="linha2">
+                <p class="conteudo">
+                    Mauris nec pharetra sapien. Duis a iaculis risus. Quisque ultricies libero in ante venenatis, in rutrum
+                    ligula posuere. Praesent augue odio, convallis hendrerit dictum vitae.
+                </p>
                 <img src="./assets/images/porta-desenho.png" alt="Desenho técnico de uma porta de giro">
             </div>
 
-            <div class="linha">
-                <p class="conteudo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates voluptatibus at dignissimos dolore omnis quia magnam quos quam. Eius accusantium ipsam eveniet est dolorem, quibusdam doloribus vitae error odio magni?</p>
-                <img src="./assets/images/fixo-desenho.png" alt="Desenho técniso de um fixo">
+            <div class="linha" id="linha3">
+                <p class="conteudo">
+                    Ut non molestie eros. Nulla vestibulum et nunc eget convallis. Aenean ornare molestie leo in bibendum.
+                    Praesent a aliquam eros.
+                </p>
+                <img src="./assets/images/fixo-desenho.png" alt="Desenho técnico de um fixo">
             </div>
-        </div>
+
+            <div class="linha" id="linha4">
+                <p class="conteudo">
+                    Proin egestas rhoncus blandit. Donec vel arcu auctor, fringilla ipsum eget, commodo enim. Curabitur
+                    volutpat, ex eget suscipit congue.
+                </p>
+                <img src="./assets/images/janela-desenho.png" alt="Desenho técnico de janela de correr">
+            </div>
         </div>
     </section>
 
-    <section id="equipe">
-        <img src="./assets/images/engenheiros-foto.png" alt="Engenheiros em fábrica">
-        <div id="equipe-texto">
-            <h2>Equipe de engenharia</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dignissim, sem eget volutpat molestie, nunc erat tristique sapien, eget tempus felis dolor eu metus. Morbi id feugiat nibh. Maecenas auctor eros quis posuere dignissim. Nam ac nisi pellentesque nibh egestas mollis in ac massa. Nam feugiat varius nibh, vel convallis metus consequat id. Vestibulum porta nibh et ipsum viverra dignissim. Integer lacus nibh, ultricies at elementum eu, laoreet sed neque.</p>
-            <p>Varius lorem et lacus fermentum molestie. Duis pulvinar erat justo. Mauris pulvinar pellentesque eros in fermentum. In feugiat, leo sit amet dignissim hendrerit, est justo malesuada tortor, sit amet egestas velit nibh nec enim. Donec dui dui, lacinia quis sagittis non, dignissim non mi. Proin egestas rhoncus blandit. Donec vel arcu auctor, fringilla ipsum eget, commodo enim. Curabitur volutpat, ex eget suscipit congue, dui dolor fringilla felis, in pellentesque diam felis quis ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <section id="equipe-pagina">
+        <img src="./assets/images/engenheiros-foto.png" alt="Dupla de engenheiros em uma fábrica">
+        <div id="texto-equipe">
+            <h2>Nossa equipe de engenharia</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis libero optio pariatur sed architecto quod totam minima, illum ut, asperiores ullam sint voluptatem dolore! Vel dolores quaerat totam sequi cumque?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis libero optio pariatur sed architecto quod totam minima, illum ut, asperiores ullam sint voluptatem dolore! Vel dolores quaerat totam sequi cumque?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis libero optio pariatur sed architecto quod totam minima, illum ut, asperiores ullam sint voluptatem dolore! Vel dolores quaerat totam sequi cumque?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis libero optio pariatur sed architecto quod totam minima, illum ut, asperiores ullam sint voluptatem dolore! Vel dolores quaerat totam sequi cumque?</p>
         </div>
     </section>
 
@@ -93,7 +124,7 @@
         </div>
 
         <div id="nossas-redes">
-            <h4>Nosas redes</h4>
+            <h4>Nossas redes</h4>
             <div id="redes">
                  <a href="###"><i class="fa-solid fa-globe"></i>fatto.com.br</a>
                  <a href="###"><i class="fa-brands fa-instagram"></i>@fattocia</a>
@@ -101,5 +132,7 @@
             </div>
         </div>
     </section>
+
+    <script src="./public/script.js"></script>
 </body>
 </html>
